@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заказы - MOSHA_NOZIK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+    <script src="orders.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Логотип магазина игр" class="logo__img">
+        </a>
+        <nav class="nav" aria-label="Основное меню">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="shop.html" class="nav__link">КАТАЛОГ ИГР</a></li>
+                <li><a href="cart.html" class="nav__link">КОРЗИНА</a></li>
+                <li id="navAuthLink">
+                    <a href="login.html" class="nav__link">ВОЙТИ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="catalog">
+            <h1 class="visually-hidden">Мои заказы</h1>
+            <h2 class="page-title">МОИ ЗАКАЗЫ</h2>
+            
+            <!-- Сюда будут загружаться заказы -->
+            <div class="orders-list" id="ordersList"></div>
+            
+            <!-- Сообщение, если заказов нет -->
+            <p class="catalog__empty" id="ordersEmpty" hidden>У вас пока нет заказов. Перейдите в каталог, чтобы что-нибудь купить!</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; MOSHA_NOZIK 2026. Все права защищены?)</p>
+    </footer>
+</body>
+</html>

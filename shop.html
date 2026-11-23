@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог игр</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Логотип магазина игр" class="logo__img">
+        </a>
+        <nav class="nav" aria-label="Основное меню">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="shop.html" class="nav__link">КАТАЛОГ ИГР</a></li>
+                <li><a href="cart.html" class="nav__link">КОРЗИНА</a></li>
+                <li id="navAuthLink">
+                    <a href="login.html" class="nav__link">ВОЙТИ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="visually-hidden">Каталог игр</h1>
+        <section class="catalog">
+            <!-- 1 -->
+            <article class="game-card" data-id="ono-malus" data-genre="rpg" data-date="2020" data-price="1000">
+                <img src="logoOnoMalus.png" alt="Ono Malus" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Ono Malus</h2>
+                    <p class="game-card__desc">RPG / ХОРРОР</p>
+                    <button class="game-card__price" type="button" data-id="ono-malus" data-price="1000">1000 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Ono Malus"></a>
+            </article>
+
+            <!-- 2 -->
+            <article class="game-card" data-id="is-it-real" data-genre="horror" data-date="2021" data-price="1500">
+                <img src="logoIsItReal.png" alt="Is it real?" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Is it real?</h2>
+                    <p class="game-card__desc">ХОРРОР</p>
+                    <button class="game-card__price" type="button" data-id="is-it-real" data-price="1500">1500 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Is it real?"></a>
+            </article>
+
+            <!-- 3 -->
+            <article class="game-card" data-id="what-is-fear" data-genre="horror" data-date="2021" data-price="2000">
+                <img src="logoWhatIsFear.png" alt="What is fear?" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">What is fear?</h2>
+                    <p class="game-card__desc">ХОРРОР</p>
+                    <button class="game-card__price" type="button" data-id="what-is-fear" data-price="2000">2000 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре What is fear?"></a>
+            </article>
+
+            <!-- 4 -->
+            <article class="game-card" data-id="life-in-boxes" data-genre="puzzle" data-date="2022" data-price="1200">
+                <img src="logoLifeInBoxes.png" alt="Life in boxes" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Life in boxes</h2>
+                    <p class="game-card__desc">ГОЛОВОЛОМКА</p>
+                    <button class="game-card__price" type="button" data-id="life-in-boxes" data-price="1200">1200 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Life in boxes"></a>
+            </article>
+
+            <!-- 5 -->
+            <article class="game-card" data-id="fair-tale" data-genre="adventure" data-date="2022" data-price="2500">
+                <img src="logoFairTale.png" alt="Fair Tale" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Fair Tale</h2>
+                    <p class="game-card__desc">ПРИКЛЮЧЕНИЕ</p>
+                    <button class="game-card__price" type="button" data-id="fair-tale" data-price="2500">2500 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Fair Tale"></a>
+            </article>
+
+            <!-- 6 -->
+            <article class="game-card" data-id="save-him" data-genre="horror" data-date="2022" data-price="1800">
+                <img src="logoSaveHimBeCareful.png" alt="Save him, be careful" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Save him, be careful</h2>
+                    <p class="game-card__desc">ХОРРОР</p>
+                    <button class="game-card__price" type="button" data-id="save-him" data-price="1800">1800 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Save him, be careful"></a>
+            </article>
+
+            <!-- 7 -->
+            <article class="game-card" data-id="light-in-the-dark" data-genre="puzzle" data-date="2023" data-price="3000">
+                <img src="logoLightInTheDark.png" alt="Light In The Dark" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Light In The Dark</h2>
+                    <p class="game-card__desc">ГОЛОВОЛОМКА</p>
+                    <button class="game-card__price" type="button" data-id="light-in-the-dark" data-price="3000">3000 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Light In The Dark"></a>
+            </article>
+
+            <!-- 8 -->
+            <article class="game-card" data-id="worst-new-year" data-genre="adventure" data-date="2023" data-price="800">
+                <img src="logoTheWorstNewYear.png" alt="The Worst New Year" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">The Worst New Year</h2>
+                    <p class="game-card__desc">ПРИКЛЮЧЕНИЕ</p>
+                    <button class="game-card__price" type="button" data-id="worst-new-year" data-price="800">800 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре The Worst New Year"></a>
+            </article>
+
+            <!-- 9 -->
+            <article class="game-card" data-id="grass-desert" data-genre="adventure" data-date="2024" data-price="2200">
+                <img src="logoGrassDesert.png" alt="Grass Desert" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Grass Desert</h2>
+                    <p class="game-card__desc">ПРИКЛЮЧЕНИЕ</p>
+                    <button class="game-card__price" type="button" data-id="grass-desert" data-price="2200">2200 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Grass Desert"></a>
+            </article>
+
+            <!-- 10 -->
+            <article class="game-card" data-id="drinking-santa" data-genre="arcade" data-date="2024" data-price="1900">
+                <img src="logoDrinkingSanta.png" alt="Drinking Santa" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">Drinking Santa</h2>
+                    <p class="game-card__desc">АРКАДА</p>
+                    <button class="game-card__price" type="button" data-id="drinking-santa" data-price="1900">1900 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре Drinking Santa"></a>
+            </article>
+
+            <!-- 11 -->
+            <article class="game-card" data-id="autognom" data-genre="arcade" data-date="2025" data-price="3500">
+                <img src="logoAutoGnom.png" alt="AutoGnom" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">AutoGnom</h2>
+                    <p class="game-card__desc">АРКАДА</p>
+                    <button class="game-card__price" type="button" data-id="autognom" data-price="3500">3500 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре AutoGnom"></a>
+            </article>
+
+            <!-- 12 -->
+            <article class="game-card" data-id="beatemupstairs" data-genre="action" data-date="2025" data-price="2100">
+                <img src="logoBeatEmUpStairs.png" alt="BeatEmUpStairs" class="game-card__img">
+                <div class="game-card__content">
+                    <h2 class="game-card__title">BeatEmUpStairs</h2>
+                    <p class="game-card__desc">ЭКШЕН</p>
+                    <button class="game-card__price" type="button" data-id="beatemupstairs" data-price="2100">2100 РУБ</button>
+                </div>
+                <a href="game.html" class="game-card__link" aria-label="Перейти к игре BeatEmUpStairs"></a>
+            </article>
+
+            <p class="catalog__empty" hidden>По вашему запросу ничего не найдено. Попробуйте изменить фильтр.</p>
+        </section>
+
+        <aside class="sidebar">
+            <form class="filter-form" novalidate>
+                <section class="sidebar__block">
+                    <h3 class="sidebar__title">СОРТИРОВКА</h3>
+                    <div class="filter">
+                        <label class="filter__label" for="sort">ПО</label>
+                        <select id="sort" name="sort" class="filter__select">
+                            <option value="default">УМОЛЧАНИЮ</option>
+                            <option value="price-asc">ЦЕНЕ (ПО ВОЗРАСТАНИЮ)</option>
+                            <option value="price-desc">ЦЕНЕ (ПО УБЫВАНИЮ)</option>
+                            <option value="date-asc">ДАТЕ (СТАРЫЕ СНАЧАЛА)</option>
+                            <option value="date-desc">ДАТЕ (НОВЫЕ СНАЧАЛА)</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="sidebar__block">
+                    <h3 class="sidebar__title">ФИЛЬТР</h3>
+                    <div class="filter">
+                        <label class="filter__label" for="genre">ПО ЖАНРУ</label>
+                        <select id="genre" name="genre" class="filter__select">
+                            <option value="any">ЛЮБОЙ</option>
+                            <option value="rpg">RPG</option>
+                            <option value="horror">ХОРРОР</option>
+                            <option value="adventure">ПРИКЛЮЧЕНИЕ</option>
+                            <option value="puzzle">ГОЛОВОЛОМКА</option>
+                            <option value="arcade">АРКАДА</option>
+                            <option value="action">ЭКШЕН</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <span class="filter__label">ПО СТОИМОСТИ</span>
+                        <div class="filter__range">
+                            <input type="number" id="priceFrom" name="priceFrom" class="filter__input" placeholder="от" min="0" step="100">
+                            <input type="number" id="priceTo"   name="priceTo"   class="filter__input" placeholder="до" min="0" step="100">
+                        </div>
+                    </div>
+                    <button type="reset" class="filter__reset">СБРОСИТЬ</button>
+                </section>
+
+                <section class="sidebar__block">
+                    <div class="currency-widget currency-widget--loading">
+                        <p class="currency-widget__text">Загрузка курсов валют…</p>
+                    </div>
+                </section>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; MOSHA_NOZIK 2026. Все права защищены?)</p>
+    </footer>
+</body>
+</html>

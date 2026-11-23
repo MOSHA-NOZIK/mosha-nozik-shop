@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра Ono Malus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Логотип магазина игр" class="logo__img">
+        </a>
+        <nav class="nav" aria-label="Основное меню">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="shop.html" class="nav__link">КАТАЛОГ ИГР</a></li>
+                <li><a href="cart.html" class="nav__link">КОРЗИНА</a></li>
+                <li id="navAuthLink">
+                    <a href="login.html" class="nav__link">ВОЙТИ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main main--game">
+        <h1 class="visually-hidden">Игра Ono Malus</h1>
+        <section class="game-details">
+            <h2 class="game-details__title">ИГРА “ONO MALUS”</h2>
+            
+            <div class="game-gallery">
+                <div class="game-gallery__main">
+                    <!-- Главный скриншот -->
+                    <img src="logoOnoMalus.png" alt="Обложка игры Ono Malus" class="game-gallery__img">
+                </div>
+                <div class="game-gallery__side">
+                    <!-- Замена второго изображения на скриншот 16:9 -->
+                    <img src="screenshotOnoMalus.png" alt="Скриншот игры Ono Malus" class="game-gallery__img game-gallery__img--screenshot">
+                    
+                    <!-- Кнопка цены -->
+                    <button class="game-details__price" type="button" 
+                            data-id="ono-malus" 
+                            data-title="Ono Malus" 
+                            data-price="1000" 
+                            data-image="logoOnoMalus.png">
+                        1000 РУБ
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-details__desc">
+                <h3>ПОДРОБНОЕ ОПИСАНИЕ</h3>
+                <p>
+                    Ono Malus - RPG игра в жутком мистическом сеттинге, где повсюду обитают страшные аномалии, с которыми предстоит встретиться главному герою, чтобы разгадать их тайны и выбраться из заточения.<br><br>
+                    Мы играем за персонажа по имени Эсту Ари. Он жрец одной из местных церквей, но однажды он попадает в другое измерение, где вокруг ходят очень странные существа. Он решил называть их аномалиями.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; MOSHA_NOZIK 2026. Все права защищены?)</p>
+    </footer>
+</body>
+</html>

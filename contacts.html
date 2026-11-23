@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - MOSHA_NOZIK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Логотип магазина игр" class="logo__img">
+        </a>
+        <nav class="nav" aria-label="Основное меню">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="shop.html" class="nav__link">КАТАЛОГ ИГР</a></li>
+                <li><a href="cart.html" class="nav__link">КОРЗИНА</a></li>
+                <li id="navAuthLink">
+                    <a href="login.html" class="nav__link">ВОЙТИ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main main--contacts">
+        <h1 class="visually-hidden">Контакты</h1>
+        
+        <div class="contacts-container">
+            <section class="contacts-info">
+                <h2 class="contacts-title">СВЯЗАТЬСЯ СО МНОЙ</h2>
+                <ul class="contacts-list">
+                    <li>
+                        <a href="https://t.me/mosha_nozik" target="_blank" rel="noopener noreferrer" class="contacts-link">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@mosha_nozik" target="_blank" rel="noopener noreferrer" class="contacts-link">
+                            YouTube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mosha-nozik.itch.io" target="_blank" rel="noopener noreferrer" class="contacts-link">
+                            Itch.io
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contacts-form">
+                <h2 class="contacts-title">ОБРАТНАЯ СВЯЗЬ</h2>
+                <!-- novalidate — отключаем браузерные подсказки, работаем своими -->
+                <form class="feedback-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="ИВАН ИВАНОВ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Ваш Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="IVAN@EXAMPLE.COM">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="ВАШЕ СООБЩЕНИЕ..."></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
+                    <p class="form-success"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; MOSHA_NOZIK 2026. Все права защищены?)</p>
+    </footer>
+</body>
+</html>
