@@ -157,8 +157,7 @@ def get_my_orders(current_user: dict = Depends(get_current_user)):
 # Путь к корневой папке (на уровень выше папки backend)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Раздаем статические файлы (картинки, стили)
-app.mount("/", StaticFiles(directory=BASE_DIR), name="static")
+app.mount("/", StaticFiles(directory=BASE_DIR, html=True), name="static")
 
 # Главная страница
 @app.get("/")
