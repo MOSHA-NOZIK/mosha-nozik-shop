@@ -158,7 +158,7 @@ def get_my_orders(current_user: dict = Depends(get_current_user)):
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Раздаем статические файлы (картинки, стили)
-app.mount("/static", StaticFiles(directory=BASE_DIR), name="static")
+app.mount("/", StaticFiles(directory=BASE_DIR), name="static")
 
 # Главная страница
 @app.get("/")
